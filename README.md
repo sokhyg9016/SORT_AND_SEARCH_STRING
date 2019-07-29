@@ -163,7 +163,29 @@ free(test); // error, because test is no longer pointing to allocated space.
 
 > K. N. KING - C PROGRAMMING [p. 287]
 
-```scanf```함수는 
+
+```c
+char str[15];
+scanf("%s", str);
+```
+
+> There's no need to put the ```&``` operator in front of ```str``` in the call of ```scanf```; like any array name, ```str```
+is treated as a pointer when passed to a function. When ```scanf``` is called, it skips white space, then reads characters and stores them in "str" until it encounters a white-space character.
+<p>
+
+	scanf함수 호출시 str앞에 &연산자를 붙일 필요가 없다. 다른 배열 이름들처럼, str은 함수에 전달될 때 포인터로 처리된다.
+	scanf 함수가 호출되면, 공백은 건너 뛰고, 공백 문자(스펭스 또는 텝)와 마주칠 때까지 문자를 읽고 'str'에 저장한다.
+</p>
+
+> A string read using scanf will never contain white space, Consequently, scanf won't usually read a full line of input;
+<p>
+
+	scanf를 사용하여 읽은 문자열에는 공백이 전혀 없으므로, 따라서 scanf는 일반적으로 입력의 전체 줄을 읽지 않는다.
+
+</p>
+
+나의 경우, 일반적으로 문자열을 받을 때 ```fgets```를 많이 쓰는 편이다. 이번에 String 쪽을 공부하다가 괜찮은 입력 함수가 있어서 사용해 보았다.
+아래는 해당 입력함수의 내용이다.
 
 ```c
 

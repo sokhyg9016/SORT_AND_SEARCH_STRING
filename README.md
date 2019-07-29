@@ -48,13 +48,24 @@ int main()
   return 0;
 }
 ```
+
+  This call causes a pointer to the first element of ```b``` to be assigned to ```a```; the array itself isn't copied.
 <p>
-  This call causes a pointer to the first element of <em><b>b</b></em> to be assigned to <em><b>b</b></em>; the array itself isn't copied.<br>
-The fact that an array argument is treated as a pointer has some important con-sequences:
+    
+    이 호출으로 인해 'b' 의 첫 번째 요소인 'a' 에 b의 첫 번재 요소의 주소가 저장되고, 배열 자체가 복사되지 않는다.
+   
 </p>
 
 
+<br>
+
 > 📑 When an ordinary variable is passed to a function, its value is copied; any changes to the corresponding parameter don't affect the variable. In contrast, an array used as argument isn't protected against change, since no copy is made of the array itself.
+<p>
+    
+    일반 변수가 함수에 전달되면 그 값이 복사된다. 해당 매개변수의 변경은 변수에 영향을 미치지 않는다. 
+    이와는 대조적으로, 인수로 사용되는 배열은 배열 자체의 복사본이 만들어지지 않기 때문에 변경으로부터 보호되지 않는다.
+   
+</p>
 
 > 📑 An array parameter can be declared as a pointer if desired. For example, ```find_largest``` could be defined as follows:
 

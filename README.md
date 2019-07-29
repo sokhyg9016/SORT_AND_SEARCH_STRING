@@ -84,6 +84,17 @@ int find_largest(int *a, int n)
    
 </p>
 
+> 이러한 원리는 main 함수에서도 볼 수 있다. 즉 무슨말인가 하면,
+
+```c
+int main(int argc, char* argv[]) { ... }
+```
+보통 이러한 형태로 사용도 하고,
+```c
+int main(int argc, char** argv) {...}
+```
+이러한 형태로도 사용하는데, 사실 두 경우 모두 ```argv```에 차이는 없고, 다만 컴파일러가 ```argv[]```를 포인터로 처리해 줄 수 있다는 것이다.
+
 <br>
 
 

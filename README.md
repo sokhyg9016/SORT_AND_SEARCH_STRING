@@ -54,9 +54,9 @@ The fact that an array argument is treated as a pointer has some important con-s
 </p>
 
 
-> 📑 When an ordinary variable is passed to a function, its value is copied; any changes to the corresponding parameter don't affect the variable. In contrast, an array used as argument isn't protected against change, since no copy is made of the array itself.|
+> 📑 When an ordinary variable is passed to a function, its value is copied; any changes to the corresponding parameter don't affect the variable. In contrast, an array used as argument isn't protected against change, since no copy is made of the array itself.
 
-> 📑 An array parameter can be declared as a pointer if desired. For example, <em>find_largest</em> could be defined as follows:
+> 📑 An array parameter can be declared as a pointer if desired. For example, ```find_largest``` could be defined as follows:
 
 ```c
 int find_largest(int *a, int n)

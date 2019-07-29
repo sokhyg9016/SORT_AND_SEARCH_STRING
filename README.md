@@ -96,6 +96,27 @@ int main(int argc, char** argv) {...}
 이러한 형태로도 사용하는데, 사실 두 경우 모두 ```argv```에 차이는 없고, 다만 컴파일러가 ```argv[]```를 포인터로 처리해 줄 수 있다는 것이다.
 
 <br>
+<br>
+
+## ✔ [참고]The C Programming Language - Ritchie & Kernighan
+
+> ```P. 99```
+
+> There is one difference between an ```array name``` and a ```pointer``` that must be kept in mind. **```A pointer is a variable```**, so ```pa=a``` and ```pa++``` are legal. But an **```array name is not a variable```**; constructions like ```a=pa``` and ```a++``` are illegal. When an ```array name``` is passed to a function, what is passed is the location of the initial element. Within the called function, this argument is a local variable, and so an **__array name parameter is a pointer__**, that is, a variable containing an address.
+<p>
+
+	배열 이름과 포인터 사이에는 명심해야 할 차이점이 하나 있다. 
+	포인터는 변수이기 때문에 `pa=a` 와 `pa++` 와 같은 문법을 쓸 수 있다. *그러나 배열 이름은 변수가 아니다. 	   
+	`a=pa` 와 `a++` 와 같은 구조는 불법이다. 
+
+	배열 이름이 함수에 전달될 때 전달되는 것은 1번째 요소의 위치다. 
+	호출된 함수 내에서 이 인수는 지역 변수이기 때문에 배열 이름 매개 변수는 포인터, 즉 주소를 포함하는 변수다.
+	
+	
+</p>
+
+
+<br>
 
 
 ## 📑 코드 살피기

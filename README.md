@@ -7,6 +7,14 @@
 | ------------- |:-------------:| 
 | 2019.07.29     | `함수 매개변수` `배열` `이중 포인터` `문자열` | 
 
+> 참고
+<ol>
+	<li><a href = "https://stackoverflow.com/questions/48868367/whats-a-modern-term-for-array-pointer-equivalence">whats-a-modern-term-for-array-pointer-equivalence</a></li>
+	<li><a href = "https://stackoverflow.com/questions/8600181/allocate-memory-and-save-string-in-c">allocate-memory-and-save-string-in-c</a></li>
+	<li><a href = "https://stackoverflow.com/questions/49075372/how-does-a-c-compiler-know-that-char-x-points-to-an-array">how-does-a-c-compiler-know-that-char-x-points-to-an-array</a></li>	
+	<li><a href = "https://stackoverflow.com/questions/27213580/difference-between-char-argv-and-char-argv-for-the-second-argument-to-main">difference-between-char-argv-and-char-argv-for-the-second-argument-to-main</a></li>
+	
+</ol>
 <hr>
 
 ## ✔ About Function Argument 

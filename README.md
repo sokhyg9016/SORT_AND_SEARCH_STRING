@@ -65,6 +65,6 @@ int find_largest(int *a, int n)
 }
 ```
 
->> Declaring **__a__** to be a pointer is equivalent to declaring it to be an array; the compiler treats the declarations as though they were identical.
+> 📋 Declaring **__a__** to be a pointer is equivalent to declaring it to be an array; the compiler treats the declarations as though they were identical.
 
 
